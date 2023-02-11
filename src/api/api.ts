@@ -1,7 +1,4 @@
 import axios, { AxiosInstance, AxiosRequestConfig } from 'axios'
-import { url } from 'inspector'
-import { config } from 'process'
-import { stringify } from 'querystring'
 
 const axiosParams = {
   baseURL:

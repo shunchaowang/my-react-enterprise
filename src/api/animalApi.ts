@@ -12,7 +12,7 @@ export type DogData = {
 
 export const fetchDog = () => {
   return api.get<DogData>(URLS.fetchDogUrl, {
-    baseURL: 'http://dog.ceo/api',
+    baseURL: 'http://dog.ceo/api/',
   })
 }
 

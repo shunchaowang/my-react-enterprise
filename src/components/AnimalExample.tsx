@@ -36,6 +36,8 @@ const useFetchAnimals = () => {
     initFetchCat()
   }
 
+  useEffect(() => fetchAnimals(), [])
+
   return {
     dog,
     cat,

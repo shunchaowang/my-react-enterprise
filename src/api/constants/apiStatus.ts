@@ -12,7 +12,8 @@ export const defaultApiStatuses: ApiStatus[] = [
   'ERROR',
 ]
 
-export type ApiStatuses = Record<ApiStatus, ApiStatus>
+// TODO: is this needed to be exported
+// type ApiStatuses = Record<ApiStatus, ApiStatus>
 
 // export const apiStatus: ApiStatuses = {
 //   IDLE,

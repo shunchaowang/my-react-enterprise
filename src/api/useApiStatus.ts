@@ -13,7 +13,7 @@ const prepareStatuses = (currentStatus: ApiStatus): Statuses => {
   const statuses = {} as Statuses
 
   for (const status of defaultApiStatuses) {
-    const normalizedStatus = capitalize(status)
+    const normalizedStatus = capitalize(status.toLowerCase())
     const normalizedStatusKey = `is${normalizedStatus}` as keyof Statuses
     statuses[normalizedStatusKey] = status === currentStatus
   }
@@ -28,7 +28,7 @@ const prepareStatuses = (currentStatus: ApiStatus): Statuses => {
  * @param currentStatus
  * @returns
  */
-export const useApiStatus = (currentStatus: ApiStatus) => {
+export const useApiStatus = (currentStatus: ApiStatus = IDLE) => {
   const [status, setStatus] = useState<ApiStatus>(currentStatus)
   const statuses = useMemo(() => prepareStatuses(status), [status])
   return { status, setStatus, ...statuses }

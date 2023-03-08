@@ -1,7 +1,8 @@
 import './App.css'
 // import AnimalExample from '@/components/AnimalExample'
 // import AnimalExampleWithApiStates from './components/AnimalExampleWithApiStates'
-import AnimalExampleWithUseApi from './components/AnimalExampleWithUseApi'
+// import AnimalExampleWithUseApi from './components/AnimalExampleWithUseApi'
+import SearchMealExample from './components/SearchMealsExample'
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
       <h1 className='font-semibold text-2xl'>React - The Road To Enterprise</h1>
       {/* <AnimalExample /> */}
       {/* <AnimalExampleWithApiStates /> */}
-      <AnimalExampleWithUseApi />
+      {/* <AnimalExampleWithUseApi /> */}
+      <SearchMealExample />
     </div>
   )
 }

@@ -76,7 +76,6 @@ const SearchMealExample = () => {
         <div className='max-h-60 overflow-y-auto'>
           {meals.map((meal) => (
             <div className='py-1 odd:bg-gray-200' key={meal.idMeal}>
-              Meals
               <p>{meal.strMeal}</p>
             </div>
           ))}

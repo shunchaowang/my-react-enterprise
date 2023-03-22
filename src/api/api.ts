@@ -50,7 +50,7 @@ const withAbort = <T>(fn: WithAbortFn) => {
       }
     } catch (error) {
       console.log('api error', error)
-      // add 'aborted' preperty to the error if the request was canceled
+      // add 'aborted' property to the error if the request was canceled
       if (didAbort(error)) {
         error.aborted = true
       }
